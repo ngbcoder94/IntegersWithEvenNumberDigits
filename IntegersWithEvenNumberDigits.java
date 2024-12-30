@@ -12,14 +12,14 @@ public class IntegersWithEvenNumberDigits{
          * @params nums[] - Integer array that will contain the numbers in question
          * @return int - How many of the numbers are composed of an EVEN number of digits. 
          */
-        public int expoloreDigits(int[] nums){
+        public int exploreDigits(int[] nums){
                 
                 int totalCount = 0;    //Initialize var to keep track of total number of elements evenly divisible by 2.
 
                 //Need a for-loop to iterate over the array. 
                 for(int i: nums){
                         
-                        int varX = nums[i];        //Capture the ith element of the array.
+                        int varX = i;        //Capture the ith element of the array.
                         int helper = 0;            //Initialize helper var to keep track of # digits/# in array. 
                         boolean boolVar = true;    //Initialize boolean for while-loop below.
                         
@@ -52,6 +52,17 @@ public class IntegersWithEvenNumberDigits{
         //Main function used for testing.
         public static void main(String[] args){
                 
-                System.out.println("Lets Test!!!!");
+                int[] testerArr = {1, 22, 222, 2222, 222222, 22222222, 345};     //Create an array to test with. 
+                
+                IntegersWithEvenNumberDigits newObj = new IntegersWithEvenNumberDigits();   //Create instance of object. 
+                
+                System.out.println(newObj.exploreDigits(testerArr));       //Test my new func.
         }
 }
+
+
+
+
+
+
+
