@@ -3,7 +3,8 @@
  *
  * Author: Nick Burkett
  * Date: 12/30/24
- *
+ * 
+ * Status = SOLVED.
  */
 public class IntegersWithEvenNumberDigits{
 
