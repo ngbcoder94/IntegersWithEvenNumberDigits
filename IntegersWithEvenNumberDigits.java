@@ -37,7 +37,16 @@ public class IntegersWithEvenNumberDigits{
                                         boolVar = false;    //Update the bool bec we are complete with this number. 
                                 }
                         }
+
+                        //Here is where I check to see if the total number of digits is even. 
+                        if((helper % 2) == 0){
+                                
+                                totalCount += 1;   //Increment totalCount by one to account for the case.
+
+                        }
                 }
+
+                return totalCount;     //Return the total number of elements in the array that have an even number of digits.
         }
 
         //Main function used for testing.
